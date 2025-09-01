@@ -1,0 +1,174 @@
+.team {
+  background: var(--background-light);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.team-grid::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}
+
+.team-card {
+  background: var(--background-white);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover::before {
+  transform: scaleX(1);
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.member-avatar {
+  margin-bottom: 1.5rem;
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-placeholder::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  border-radius: 50%;
+  z-index: -1;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+}
+
+.member-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.detail-icon {
+  font-size: 1rem;
+}
+
+.member-bio {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.team-cta {
+  background: var(--background-white);
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.team-cta h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.team-cta p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-card {
+    padding: 1.5rem;
+  }
+  
+  .team-cta {
+    padding: 2rem 1.5rem;
+  }
+}
