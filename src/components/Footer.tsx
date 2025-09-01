@@ -33,7 +33,6 @@ const Footer: React.FC = () => {
             <h4>Resources</h4>
             <ul>
               <li><a href="https://targetalpha.ca" target="_blank" rel="noopener noreferrer">Official Website</a></li>
-              <li><a href="https://targetalpha.ca/faq" target="_blank" rel="noopener noreferrer">FAQ</a></li>
               <li><a href="https://targetalpha.ca/events" target="_blank" rel="noopener noreferrer">Competitions</a></li>
               <li><a href="https://targetalpha.ca/contact" target="_blank" rel="noopener noreferrer">Get Support</a></li>
             </ul>
