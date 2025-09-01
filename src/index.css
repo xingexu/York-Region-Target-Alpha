@@ -63,6 +63,35 @@
   transition: all 0.3s ease;
 }
 
+/* Mobile theme toggle adjustments */
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .theme-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .theme-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 /* Global dark mode styles */
 body {
   background-color: var(--background-color);
