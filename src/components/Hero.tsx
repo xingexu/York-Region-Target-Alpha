@@ -19,9 +19,18 @@ const Hero: React.FC = () => {
               <a 
                 href="#about" 
                 className="btn btn-primary"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                style={{ 
+                  display: 'inline-block',
+                  padding: '12px 24px',
+                  backgroundColor: '#059669',
+                  color: 'white',
+                  textDecoration: 'none',
+                  borderRadius: '8px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: 'none',
+                  fontSize: '1rem',
+                  transition: 'all 0.3s ease'
                 }}
               >
                 Learn More
@@ -31,6 +40,19 @@ const Hero: React.FC = () => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-secondary"
+                style={{ 
+                  display: 'inline-block',
+                  padding: '12px 24px',
+                  backgroundColor: 'transparent',
+                  color: '#059669',
+                  textDecoration: 'none',
+                  borderRadius: '8px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  border: '2px solid #059669',
+                  fontSize: '1rem',
+                  transition: 'all 0.3s ease'
+                }}
               >
                 Join Target Alpha
               </a>
