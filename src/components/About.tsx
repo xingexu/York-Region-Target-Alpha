@@ -57,8 +57,8 @@ const About: React.FC = () => {
             <p>Chapter Founded</p>
           </div>
           <div className="stat-card">
-            <h3>25+</h3>
-            <p>Emerging Members</p>
+            <h3>50</h3>
+            <p>Member Chapter</p>
           </div>
           <div className="stat-card">
             <h3>8+</h3>

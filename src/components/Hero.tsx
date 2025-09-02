@@ -24,8 +24,8 @@ const Hero: React.FC = () => {
           </div>
           <div className="hero-stats">
             <div className="stat-item">
-              <h3>25+</h3>
-              <p>Emerging Members</p>
+              <h3>50</h3>
+              <p>Member Chapter</p>
             </div>
             <div className="stat-item">
               <h3>8+</h3>

@@ -75,7 +75,7 @@ const Events: React.FC = () => {
             <div className="competition-card">
               <div className="competition-header">
                 <span className="competition-type">Competition</span>
-                <span className="deadline-status registration-open">Registration Open</span>
+                <span className="deadline-status coming-soon">Coming Soon</span>
               </div>
               
               <h4 className="competition-title">SPC - Stock Pitch Competition</h4>
@@ -131,7 +131,7 @@ const Events: React.FC = () => {
             <div className="competition-card">
               <div className="competition-header">
                 <span className="competition-type">Competition</span>
-                <span className="deadline-status planning">Planning</span>
+                <span className="deadline-status coming-soon">Coming Soon</span>
               </div>
               
               <h4 className="competition-title">FPC - Financial Planner's Conference</h4>
@@ -162,7 +162,7 @@ const Events: React.FC = () => {
           <h3>Want to Join Our Chapter?</h3>
           <p>
             Are you a student in York Region interested in joining York Region Target Alpha? 
-            We're always looking for passionate members to help grow our emerging chapter.
+            We're always looking for passionate members to help grow our 50-member chapter.
           </p>
           <a href="#contact" className="btn btn-primary">Join Our Chapter</a>
         </div>
