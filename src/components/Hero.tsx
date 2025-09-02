@@ -16,8 +16,22 @@ const Hero: React.FC = () => {
               Learn, grow, and build your financial knowledge alongside peers from across the region.
             </p>
             <div className="hero-buttons">
-              <a href="#about" className="btn btn-primary">Learn More</a>
-              <a href="https://targetalpha.ca" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <a 
+                href="#about" 
+                className="btn btn-primary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Learn More
+              </a>
+              <a 
+                href="https://targetalpha.ca" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-secondary"
+              >
                 Join Target Alpha
               </a>
             </div>

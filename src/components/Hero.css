@@ -66,6 +66,14 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-buttons .btn {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .hero-stats {
